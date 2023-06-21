@@ -1,0 +1,20 @@
+/*
+Theme Name: Template Site
+Author: Full Circle Design Studio
+Author URI: https://full-circle.design
+Description: Template Site
+*/
+
+@use "sass/layout/navigation";
+@use "sass/layout/footer";
+
+@use "sass/components/buttons";
+@use "sass/components/carousel";
+@use "sass/components/company-showcase";
+@use "sass/components/accordion";
+@use "sass/components/forms";
+
+@use "sass/pages/about";
+@use "sass/pages/contact";
+
+@use "sass/utils/variables" as *;
