@@ -1,0 +1,44 @@
+@use "../utils/variables" as *;
+
+.link-list {
+    li {
+        a {
+            display: list-item;
+            position: relative;
+            border-top: 1px solid $gray;
+            border-bottom: 1px solid $gray;
+            padding: 25px 0;
+        }
+        a::after {
+            content: "";
+            position: absolute;
+            right: 25px;
+            top: 20px;
+            background-image: url("./assets/arrow.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 35px;
+            height: 35px;
+            transition-duration: .4s;
+        }
+    }
+    li:nth-child(n+2) {
+        a {
+            border-top: none;
+        }
+    }
+    li:hover {
+        a::after {
+            transform: translateX(20px);
+        }
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .link-list {
+        width: 100%;
+        max-width: 530px;
+        margin: auto;
+    }
+}

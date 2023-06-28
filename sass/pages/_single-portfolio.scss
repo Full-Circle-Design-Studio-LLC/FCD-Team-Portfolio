@@ -1,0 +1,28 @@
+.portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    img {
+        height: 60%;
+        width: 100%;
+    }
+}
+.portfolio-section__banner {
+    height: 40%;
+    width: 100%;
+    padding: 50px 0;
+    background-color: white;
+}
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+    height: min-content;
+    aspect-ratio: 1/1;
+    gap: 5px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}

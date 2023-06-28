@@ -3,4 +3,65 @@ nav {
     position: fixed;
     left: 0;
     top: 0;
+    height: 75px;
+    width: 100%;
+    padding: 0 15px;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 2;
+}
+
+.nav-name {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+.menu-button {
+    padding: 14px 8px;
+}
+.member-title {
+    font-weight: 400;
+}
+.vertical-slash,
+.member-title {
+    display: none;
+}
+
+.nav-items {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 55px;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: calc(100% - 75px);
+    top: 75px;
+    left: 0;
+    font-size: 33px;
+    li a {
+        font-weight: 400;
+    }
+}
+.nav-items-show {
+    display: flex;
+}
+.close-nav {
+    position: fixed;
+    bottom: 25px;
+    margin: auto;
+}
+.close-nav-button {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+@media (min-width: 768px) {
+    .vertical-slash,
+    .member-title {
+        display: inline;
+    }
 }

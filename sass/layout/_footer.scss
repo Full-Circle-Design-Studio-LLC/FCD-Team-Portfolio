@@ -1,0 +1,63 @@
+@use "../utils/variables" as *;
+footer {
+    padding: 100px 15px;
+}
+footer > div {
+    width: 290px;
+    margin: auto;
+}
+.connect {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-bottom: 30px;
+    h2 {
+        margin-bottom: 0;
+    }
+}
+.email {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.connect-list {
+    display: flex;
+    gap: 30px;
+}
+.separator {
+    height: 1px;
+    width: 100%;
+    background-color: $gray;
+}
+.fcd-footer {
+    padding-top: 30px;
+    font-size: 20px;
+    a {
+        display: block;
+        margin-top: 15px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    footer > div {
+        align-items: center;
+    }
+    .fcd-footer {
+        width: fit-content;
+        display: flex;
+        gap: 25px;
+    }
+    .connect-list {
+        gap: 50px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    footer {
+        padding-bottom: 50px;
+    }
+}

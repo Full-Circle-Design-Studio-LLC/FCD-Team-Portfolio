@@ -1,8 +1,8 @@
 /*
-Theme Name: Template Site
+Theme Name: FCD Portfolio Site
 Author: Full Circle Design Studio
-Author URI: https://full-circle.design
-Description: Template Site
+Author URI: https://fullcircledesign.org
+Description: Portfolio site theme for FCD team members
 */
 
 @use "sass/layout/navigation";
@@ -10,11 +10,65 @@ Description: Template Site
 
 @use "sass/components/buttons";
 @use "sass/components/carousel";
-@use "sass/components/company-showcase";
 @use "sass/components/accordion";
 @use "sass/components/forms";
+@use "sass/components/jump";
+@use "sass/components/lists";
 
-@use "sass/pages/about";
+@use "sass/pages/home";
 @use "sass/pages/contact";
+@use "sass/pages/portfolio";
+@use "sass/pages/single-portfolio";
 
 @use "sass/utils/variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: new-hero;
+    color: $gray;
+}
+
+main {
+    padding-top: 75px;
+}
+h2 {
+    margin-bottom: 25px;
+}
+section {
+    padding: 50px 15px;
+}
+ul {
+    list-style: none;
+}
+a {
+    font-weight: 900;
+}
+img {
+    object-fit: cover;
+}
+
+.gray-bg {
+    background-color: $lightGray;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.p-0 {
+    padding: 0;
+}
+.letter-spacing {
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+.text-center {
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    section {
+        padding: 50px 8%;
+    }
+}

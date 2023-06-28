@@ -1,0 +1,52 @@
+@use "../utils/variables" as *;
+
+.carousel {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    padding-bottom: 25px;
+}
+.carousel-image {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.slick-track {
+    height: fit-content;
+    padding-bottom: 5px;
+}
+.slick-arrow {
+    display: none!important;
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.slick-dots li button {
+    font-size: 0;
+    border-radius: 99px;
+    border: 2px solid $gray;
+    padding: 5px;
+}
+.slick-active button {
+    background-color: $gray;
+}
+
+
+@media (min-width: 768px) {
+    .carousel {
+        width: 120%;
+        margin-left: -10%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .carousel {
+        width: 100%;
+        margin-left: 0;
+    }
+    .carousel-image {
+        max-height: 70svh;
+    }
+}
